@@ -1,0 +1,58 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true,
+      "es6": true
+    },
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    },
+    "extends": [
+      "eslint:recommended",
+      "airbnb-base",
+      "eslint-config-prettier",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "plugins": ["react", "jsx-a11y", "babel", "module-resolver"],
+    "rules": {
+      "react/prop-types": [2],
+      "react/jsx-uses-vars": [2],
+      "no-console": 1,
+      "comma-dangle": [2, "always-multiline"],
+      "no-multi-str": 0,
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 100,
+          "ignoreUrls": true
+        }
+      ],
+      "no-mixed-operators": "error",
+      "no-var": "error",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ]
+    }
+  }
+  
